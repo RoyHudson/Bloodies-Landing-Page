@@ -1,5 +1,5 @@
 <template>
-<div style="padding-bottom: 70px">
+<div style="padding-bottom: 60px">
   <a-layout>
     <a-layout-header :style="{ position: 'fixed', zIndex: 1, width: '100%' }">
       <div class="logo" />
