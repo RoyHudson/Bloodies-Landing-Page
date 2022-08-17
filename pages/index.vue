@@ -4,6 +4,7 @@
       <Card/>
       <Footer/>
   </div>
+  <!-- hola xd -->
 </template>
 <script>
 import Navbar from '../components/navbar.vue';
