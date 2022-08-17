@@ -1,6 +1,7 @@
 <template>
   <div>
       <Navbar/>
+      <Carousel/>
       <Card/>
       <Footer/>
   </div>

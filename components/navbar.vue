@@ -12,7 +12,7 @@
         <a-menu-item key="2">Blog</a-menu-item>
         <a-menu-item key="3">Grupo Sanguineo</a-menu-item>
         <a-menu-item key="4">Sobre Nosotros</a-menu-item>
-        <a-menu-item key="5">Login In / Sign Up</a-menu-item>
+        <a-menu-item key="5">Login/Sign</a-menu-item>
       </a-menu>
     </a-layout-header>
   </a-layout>
