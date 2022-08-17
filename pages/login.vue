@@ -1,6 +1,6 @@
 <template>
-<body>
-    
+<body id="login">
+    <Navbar/>
   <main class="box">
     <h2>Login</h2>
     <form>
@@ -27,24 +27,21 @@
 
 
 <script>
+import Navbar from '../components/navbar.vue';
 export default {
-    data(){
-        return{
-            email:'',
-            password:'',
-        }
-    }
-
+    name: "LoginPage",
+    components: { Navbar },
+    data() {
+        return {
+            email: "",
+            password: "",
+        };
+    },
 }
 </script>
 
 <style>
-body {
-    background: #DA4453;  
-    background: -webkit-linear-gradient(to right, #89216B, #DA4453);  
-    background: linear-gradient(to right, #89216B, #DA4453); 
 
-}
 .box {
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: 10px;

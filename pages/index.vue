@@ -1,4 +1,5 @@
 <template>
+<body id="index">
   <div>
       <Navbar/>
       <Carousel/>
@@ -7,6 +8,7 @@
       <Card/>
       <Footer/>
   </div>
+  </body>
   <!-- hola xd -->
 </template>
 <script>
@@ -20,3 +22,5 @@ export default {
     components: { Navbar, Card, Footer, Objetives, Card_image }
 }
 </script>
+
+

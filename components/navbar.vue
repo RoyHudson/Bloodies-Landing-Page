@@ -1,5 +1,5 @@
 <template>
-<div style="padding-bottom: 60px">
+<div style="padding-bottom: 80px">
   <a-layout>
     <a-layout-header :style="{ position: 'fixed', zIndex: 1, width: '100%' }">
       <div class="logo" />
@@ -8,11 +8,18 @@
         mode="horizontal"
         :style="{ lineHeight: '64px' }"
       >
-        <a-menu-item key="1">Home</a-menu-item>
+        <a-menu-item key="1">
+          <n-link to="/"> Home</n-link>
+          </a-menu-item>
         <a-menu-item key="2">Blog</a-menu-item>
         <a-menu-item key="3">Grupo Sanguineo</a-menu-item>
         <a-menu-item key="4">Sobre Nosotros</a-menu-item>
-        <a-menu-item key="5">Login/Sign</a-menu-item>
+        <a-menu-item key="5">
+            <n-link to="/login">Login In</n-link> 
+        </a-menu-item>
+        <a-menu-item key="6">
+            <n-link to="/register">Sign Up</n-link> 
+        </a-menu-item>
       </a-menu>
     </a-layout-header>
   </a-layout>
