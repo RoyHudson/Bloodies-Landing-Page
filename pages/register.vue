@@ -1,6 +1,6 @@
 <template>
-
-<body> 
+<body id="register"> 
+    <Navbar/>
   <main class="box">
     <h2>Register</h2>
     <form>
@@ -39,28 +39,25 @@
 </template>
 
 <script>
+import Navbar from '../components/navbar.vue';
 export default {
-    data(){
-        return{
-            nombre:'',
-            email:'',
-            cellphone:'',
-            password:'',
-            confirm_password:''
-        }
-    }
-
+    name: "registerPage",
+    data() {
+        return {
+            nombre: "",
+            email: "",
+            cellphone: "",
+            password: "",
+            confirm_password: ""
+        };
+    },
+    components: { Navbar }
 }
 
 </script>
 
 <style>
-body {
-    background: #DA4453;  
-    background: -webkit-linear-gradient(to right, #89216B, #DA4453);  
-    background: linear-gradient(to right, #89216B, #DA4453); 
 
-}
 .box {
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: 10px;
