@@ -1,54 +1,79 @@
 <template>
-<div style="padding-bottom: 60px">
-  <a-layout>
+  <a-layout class="navbar">
+
     <a-layout-header :style="{ position: 'fixed', zIndex: 1, width: '100%' }">
-      <div class="logo" />
-      <a-menu
-        theme="dark"
-        mode="horizontal"
-        :style="{ lineHeight: '64px' }"
-      >
-        <a-menu-item key="1">
+      <div class="logo">
+        <img height="24" width="24" src="../assets/blood-drop-blood-png-clipart-best-28.png" alt="ico" />
+
+        <h1>Bloodies</h1>
+      </div>
+      <a-menu v-model:selectedKeys="selectedKeys" theme="light" mode="horizontal" :style="{ lineHeight: '64px' }">
+        <a-menu-item key="home">
           <n-link to="/"> Home</n-link>
-          </a-menu-item>
+        </a-menu-item>
         <a-menu-item key="2">Blog</a-menu-item>
         <a-menu-item key="3">Grupo Sanguineo</a-menu-item>
         <a-menu-item key="4">Sobre Nosotros</a-menu-item>
         <a-menu-item key="5">
-            <n-link to="/login">Login In</n-link> 
+          <n-link to="/login">Login In</n-link>
         </a-menu-item>
         <a-menu-item key="6">
-            <n-link to="/register">Sign Up</n-link> 
+          <n-link to="/register">Sign Up</n-link>
         </a-menu-item>
       </a-menu>
     </a-layout-header>
   </a-layout>
-</div>
 </template>
 <script>
 import { defineComponent, ref } from 'vue';
 export default defineComponent({
   setup() {
     return {
-      selectedKeys: ref(['2']),
+      selectedKeys: ref(['home']),
     };
   },
 
 });
 </script>
 <style>
-#components-layout-demo-fixed .logo {
-  width: 120px;
-  height: 31px;
-  background: rgba(255, 255, 255, 0.2);
-  margin: 16px 24px 16px 0;
-  float: left;
+.navbar {
+  display: flex;
+  justify-content: space-between;
 }
+
+.logo {
+  margin: 0 120px 0 64px;
+  float: left;
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.logo h1 {
+  position: relative;
+  top: -1px;
+  margin: 0;
+}
+
 .site-layout .site-layout-background {
   background: #fff;
 }
 
 [data-theme='dark'] .site-layout .site-layout-background {
   background: #141414;
+}
+
+.ant-menu {
+  background-color: aliceblue;
+}
+
+.ant-layout-header {
+  background-color: aliceblue;
+  height: 0;
+  padding: 0;
+}
+
+.ant-menu {
+  border: 0;
 }
 </style>
