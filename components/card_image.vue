@@ -1,3 +1,12 @@
 <template>
-<h1>xd</h1>
+<div style="padding-left: 25%">
+  <a-card hoverable style="width: 70%;">
+    <template #cover>
+      <img alt="example" src="../assets/blood.png.jpg" style="height: 200px" />
+    </template>
+    <a-card-meta title="Objetivos">
+      <template #description></template>
+    </a-card-meta>
+  </a-card>
+</div>
 </template>
