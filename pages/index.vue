@@ -3,9 +3,9 @@
   <div>
       <Navbar/>
       <Carousel/>
-      <!-- <Card_image/> -->
+      <Card_image/>
       <!-- <Objetives/> -->
-      <Card/>
+      <!--<Card/>-->
       <Footer/>
   </div>
   </body>
@@ -17,6 +17,7 @@ import Card from '../components/card.vue';
 import Footer from '../components/footer.vue';
 import Objetives from '../components/objetives.vue';
 import Card_image from '../components/card_image.vue';
+
 export default {
     name: "IndexPage",
     components: { Navbar, Card, Footer, Objetives, Card_image }
