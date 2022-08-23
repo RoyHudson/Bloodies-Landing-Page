@@ -1,18 +1,18 @@
 <template>
 <body id="index">
   <div>
-      <Navbar/>
-      <Header data-aos="fade-up"/>
-      <Content data-aos="fade-up"/>
-      <Donator  data-aos="fade-up"/>
-      <Award data-aos="fade-up"/>
-      <StartNow/>
-      <Status/>
-      <Carousel data-aos="fade-up"/>
-      <Card_image data-aos="fade-up"/>
-      <!-- <Objetives/> -->
-      <!--<Card/>-->
-      <Footer/>
+    <Navbar/>
+    <Carousel data-aos="fade-up"/>
+    <Header data-aos="fade-up"/>
+    <Content data-aos="fade-up"/>
+    <Donator  data-aos="fade-up"/>
+    <Award data-aos="fade-up"/>
+    <StartNow/>
+    <Status/>
+    <Card_image data-aos="fade-up"/>
+    <!-- <Objetives/> -->
+    <!--<Card/>-->
+    <Footer/>
   </div>
   </body>
   <!-- hola xd -->
