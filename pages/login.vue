@@ -1,6 +1,6 @@
 <template>
-<body id="login">
-    <Navbar/>
+<div id="login">
+  <Navbar/>
   <main class="box">
     <h2>Login</h2>
     <form>
@@ -22,7 +22,7 @@
     </form>
 </main>
 
-</body>
+</div>
 </template>
 
 
@@ -105,9 +105,9 @@ export default {
     opacity: 0.8;
 }
 
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
-  -webkit-appearance: none; 
-  margin: 0; 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 </style>
