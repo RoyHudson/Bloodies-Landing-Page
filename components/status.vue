@@ -1,28 +1,38 @@
 <template>
     <a-layout class="content-info">
-        <img src="../assets/grid.png" alt="grid" class="img-left">
-                <img src="../assets/grid.png" alt="grid" class="img-right">
         <div class="text-info">
-            <h1>Estado del proyecto</h1>
-
-            <h2>Actualmente esta en una fase muy temprana 🟡</h2>
-
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus architecto deleniti assumenda ipsam
-                ipsa sed rerum necessitatibus ipsum similique corrupti impedit tempore quisquam voluptatum debitis, quia
-                distinctio iure voluptatem fugiat.</p>
-
-                <img data-aos="fade-up" src="../assets/in_process.svg"/>
+            <h1>Estado del Proyecto</h1>
+            <a-row :gutter="16">
+                <a-col :span="24" style="margin-top: 32px">
+                    <a-statistic-countdown class=" " title="Dias Faltantes" :value="deadline" format="D H M S" />
+                </a-col>
+            </a-row>
         </div>
     </a-layout>
 </template>
+<script>
+import { defineComponent } from 'vue';
+export default defineComponent({
+  setup() {
+    const onFinish = () => {
+      console.log('finished!');
+    };
 
+    return {
+      deadline: Date.now() + 10000 * 60 * 60 * 24 * 2 + 1000 * 30,
+      onFinish,
+    };
+  },
+
+});
+</script>
 <style>
 .content-info {
     position: relative;
     height: 100vh;
     width: 100%;
     background-color: white;
-    padding: 64px;
+    padding: 0px;
     overflow: hidden;
     z-index: 0;
 }

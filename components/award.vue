@@ -1,14 +1,26 @@
 <template>
     <a-layout class="award">
-        <h1>Obten recompezas por ayudar 💖!!</h1>
-        <img class="img" src="../assets/gift.svg" alt="gift" />
-        <p class="award-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur eum blanditiis molestias assumenda harum,
-            ut nihil molestiae, consequatur vero, expedita distinctio. Modi vel ipsam cum ad accusamus, adipisci quidem
-            laboriosam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem odio perferendis sit temporibus.
-            Velit dolores nam architecto quo! Obcaecati provident voluptatibus deserunt ex optio voluptate temporibus
-            molestias necessitatibus id ab?</p>
+        <h1>Grupo Sanguineo</h1>
+        <img class="img" src="../assets/blood_types.jpg" alt="gift" />
+        <a-button class="hyper"><m-link to="login.vue">Conoce a quienes puedes ayudar →</m-link></a-button>
     </a-layout>
 </template>
+<script>
+import { defineComponent } from 'vue';
+export default defineComponent({
+  setup() {
+    const onFinish = () => {
+      console.log('finished!');
+    };
+
+    return {
+      deadline: Date.now() + 1000 * 60 * 60 * 24 * 2 + 1000 * 30,
+      onFinish,
+    };
+  },
+
+});
+</script>
 
 <style>
     .award {
@@ -27,4 +39,10 @@
     text-align: center;
 }
 
+.img{
+    width: 50%;
+}
+.hyper{
+     border: white;
+}
 </style>
