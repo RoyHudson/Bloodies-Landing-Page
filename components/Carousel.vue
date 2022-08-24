@@ -1,5 +1,5 @@
 <template>
-  <a-carousel autoplay arrows="">
+  <a-carousel autoplay>
     <div v-for="item in 5" :key="item">
 <!--      <img :src="require(getImgUrl(item - 1))" alt="carousel images">-->
       <img src="https://www.wonderwall.sg/content/dam/wonderwall/images/2020/06/8-facts-about-blood-donation-that-make-world-blood-donor-day-a-success/Blood%20Donation_lead.jpg" alt="carousel images">

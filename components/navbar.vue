@@ -3,15 +3,18 @@
 
     <a-layout-header :style="{ position: 'fixed', zIndex: 1, width: '100%' }">
       <div class="logo">
-        <img height="24" width="24" src="../assets/blood-drop-blood-png-clipart-best-28.png" alt="ico" />
-
-        <h1>Bloodies</h1>
+        <n-link to="/">
+          <img height="24" width="24" src="../assets/blood-drop-blood-png-clipart-best-28.png" alt="ico" />
+          <span>Bloodies</span>
+        </n-link>
       </div>
       <a-menu v-model:selectedKeys="selectedKeys" theme="light" mode="horizontal" :style="{ lineHeight: '64px' }">
         <a-menu-item key="home">
           <n-link to="/"> Home</n-link>
         </a-menu-item>
-        <a-menu-item key="2">Blog</a-menu-item>
+        <a-menu-item key="2">
+          <n-link to="/blog">Blog</n-link>
+        </a-menu-item>
         <a-menu-item key="3">Grupo Sanguineo</a-menu-item>
         <a-menu-item key="4">Sobre Nosotros</a-menu-item>
         <a-menu-item key="5">
@@ -49,7 +52,10 @@ export default defineComponent({
   align-items: center;
 }
 
-.logo h1 {
+.logo span {
+  font-weight: bold;
+  color: #141414;
+  font-size: 18px;
   position: relative;
   top: -1px;
   margin: 0;

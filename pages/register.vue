@@ -1,5 +1,5 @@
 <template>
-<body id="register"> 
+<div id="register">
     <Navbar/>
   <main class="box">
     <h2>Register</h2>
@@ -34,7 +34,7 @@
         </nuxt-link>
     </form>
 </main>
-</body>
+</div>
 
 </template>
 
@@ -121,9 +121,9 @@ export default {
     opacity: 0.8;
 }
 
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
-  -webkit-appearance: none; 
-  margin: 0; 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 </style>
