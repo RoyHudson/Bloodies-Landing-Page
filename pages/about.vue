@@ -4,16 +4,16 @@
     <main class="texto">
         <div class="py-5">
             <div class="row">
-                <h1 class="main-heading"><u>Sobre Nosotros</u></h1>
-            
+
+                <h1>Sobre Nosotros</h1>
+                	
+                <p style="text-align:center;"><img src="../assets/blood.gif" width="800" height="400" align="center"/></p>
                 <p><center>Somos los estudiantes de la Universidad Interamericana de Panamá, de la facultad de Arquitectura, Diseño y Ingenería</center></p>
                 <p><center>Cursando el grupo de Programación Grafica con el facilitador Mayron Torres del QII del 2022</center></p>
                 <p><center>Presente proyecto es realizado por el grupo del presente curso y el proyecto es organizado y desarollado utilizando diferentes tecnologias.</center></p>
             </div>
         </div>
         
-
-
     </main>
     </body>
 </template>
