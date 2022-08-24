@@ -8,7 +8,9 @@
           <span>Bloodies</span>
         </n-link>
       </div>
+
       <a-menu selectedKeys="selectedKeys" theme="light" mode="horizontal" :style="{ lineHeight: '64px' }">
+
         <a-menu-item key="home">
           <n-link to="/"> Home</n-link>
         </a-menu-item>
@@ -16,7 +18,9 @@
           <n-link to="/blog">Blog</n-link>
         </a-menu-item>
         <a-menu-item key="3">Grupo Sanguineo</a-menu-item>
-        <a-menu-item key="4">Sobre Nosotros</a-menu-item>
+        <a-menu-item key="4">
+          <n-link to="/about">Sobre Nosotros</n-link>
+          </a-menu-item>
         <a-menu-item key="5">
           <n-link to="/login">Login In</n-link>
         </a-menu-item>
