@@ -5,9 +5,9 @@
         <div class="text-info">
             <h1>Haz una buena acción</h1>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea dicta voluptatem minus nesciunt ex ratione
-                ipsa molestias ipsam distinctio dolores consequuntur dolorum sed, repudiandae accusantium cumque non
-                laboriosam, enim illum.</p>
+            <p>Donar sangre es el regalo más valioso que podemos hacerle a alguien. La decisión de donar sangre puede salvar una vida o 
+                incluso varias si la sangre es separada por sus componentes: glóbulos rojos, plaquetas y plasma, ya que pueden utilizarse 
+                individualmente para pacientes con enfermedades específicas.</p>
 
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus architecto deleniti assumenda ipsam
                 ipsa sed rerum necessitatibus ipsum similique corrupti impedit tempore quisquam voluptatum debitis, quia

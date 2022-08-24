@@ -8,8 +8,8 @@
       <Award data-aos="fade-up"/>
       <StartNow/>
       <Status/>
-      <Carousel data-aos="fade-up"/>
-      <Card_image data-aos="fade-up"/>
+      <!-- <Carousel data-aos="fade-up"/> -->
+      <!-- <Card_image data-aos="fade-up"/> -->
       <!-- <Objetives/> -->
       <!--<Card/>-->
       <Footer/>
