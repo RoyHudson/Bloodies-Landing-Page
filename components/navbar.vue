@@ -8,7 +8,7 @@
           <span>Bloodies</span>
         </n-link>
       </div>
-      <a-menu v-model:selectedKeys="selectedKeys" theme="light" mode="horizontal" :style="{ lineHeight: '64px' }">
+      <a-menu selectedKeys="selectedKeys" theme="light" mode="horizontal" :style="{ lineHeight: '64px' }">
         <a-menu-item key="home">
           <n-link to="/"> Home</n-link>
         </a-menu-item>
@@ -70,7 +70,7 @@ export default defineComponent({
 }
 
 .ant-menu {
-  background-color: aliceblue;
+  background-color: #EDF2F4;
 }
 
 .ant-layout-header {

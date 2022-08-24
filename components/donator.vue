@@ -6,6 +6,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo rerum veritatis error a optio nesciunt
                     ullam eligendi molestias eveniet. Perspiciatis quia tenetur cumque, aut impedit quidem perferendis
                     velit minus eos.</p>
+                <a-button class="hyper"><m-link to="login.vue">Conoce a quienes puedes ayudar →</m-link></a-button>
             </div>
             <div class="banner"  data-aos="fade-up">
                 <img src="../assets/donator_list.svg" alt="banner" />
