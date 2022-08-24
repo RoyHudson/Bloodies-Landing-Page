@@ -3,7 +3,7 @@
         <img src="../assets/grid.png" alt="grid" class="img-left">
                 <img src="../assets/grid.png" alt="grid" class="img-right">
         <div class="text-info">
-            <h1>Haz una buena acción</h1>
+            <h1>Nuestra Mision y Vision</h1>
 
             <p>Donar sangre es el regalo más valioso que podemos hacerle a alguien. La decisión de donar sangre puede salvar una vida o 
                 incluso varias si la sangre es separada por sus componentes: glóbulos rojos, plaquetas y plasma, ya que pueden utilizarse 

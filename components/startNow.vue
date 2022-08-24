@@ -1,11 +1,11 @@
 <template>
     <a-layout class="start">
         <img class="start-img" src="../assets/woman_jump.svg" alt="gift" />
+        <p style="color: #AEB5C1">Si quieres obtener mas informacion puedes Suscribirte a nuestro Newsteller</p>
         <div class="form-group">
             <input class="form-field" type="email" placeholder="Email">
-        <span>@gmail.com</span>
         </div>
-        <a-button data-aos="fade-up" type="primary">Agrega</a-button>
+        <a-button data-aos="fade-up" type="primary">Enviar</a-button>
     </a-layout>
 </template>
 
@@ -36,13 +36,13 @@
   --input-border: #bfc8ad;
   --input-background: #fff;
   --input-placeholder: #CBD1DC;
-  --input-border-focus: #90b494;
+  --input-border-focus: #2B2D42;
   --group-color: var(--input-color);
   --group-border: var(--input-border);
   --group-background: #bfc8ad;
   --group-color-focus: #fff;
   --group-border-focus: var(--input-border-focus);
-  --group-background-focus: #90b494;
+  --group-background-focus: #2B2D42;
 }
 
 .form-field {
@@ -90,11 +90,11 @@
 }
 .form-group > span:first-child,
 .form-group .form-field:first-child {
-  border-radius: 6px 0 0 6px;
+  border-radius: 6px 6px 6px 6px;
 }
 .form-group > span:last-child,
 .form-group .form-field:last-child {
-  border-radius: 0 6px 6px 0;
+  border-radius: 6px 6px 6px 6px;
 }
 .form-group > span:not(:first-child),
 .form-group .form-field:not(:first-child) {
@@ -124,7 +124,7 @@
   border-color: var(--group-border-focus);
 }
 
-html {
+.email{
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
 }
@@ -136,7 +136,7 @@ html {
   box-sizing: inherit;
 }
 
-body {
+.email{
   min-height: 100vh;
   font-family: "Mukta Malar", Arial;
   display: flex;
@@ -145,10 +145,10 @@ body {
   flex-direction: column;
   background: #F2EEE3;
 }
-body .form-group {
+.form-group {
   max-width: 360px;
 }
-body .form-group:not(:last-child) {
+.form-group:not(:last-child) {
   margin-bottom: 32px;
 }
 
