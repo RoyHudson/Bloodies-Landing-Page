@@ -1,27 +1,23 @@
 
 <template>
-    <div id="Sobre Nosotros" style="padding-top:30%">
-    <Navbar />
-    <a-layout class="texto">
-        <div class="content">
+    <div>
+        <Navbar/>
+    <a-layout class="content-info">
         <div class="banner">
-            <div class="text">
-                <h1 class="TextSub">Sobre Nosotros</h1>
-                <br>
-                <br>
-                <p>Somos los estudiantes de la Universidad Interamericana de Panamá, de la facultad de Arquitectura, Diseño y Ingenería</p>
-                <p>Cursando el grupo de Programación Grafica con el facilitador Mayron Torres del QII del 2022</p>
-                <p>Presente proyecto es realizado por el grupo del presente curso y el proyecto es organizado y desarollado utilizando diferentes tecnologias.</p>
-
-
+            <img src="../assets/about.svg" alt="banner"/>
+        </div>
+        <div class="content">
+            <div class="text-info">
+            <h1 class="TextSub">Sobre Nosotros</h1>
+                <p>Somos los estudiantes de la Universidad Interamericana de Panamá, de la facultad de Arquitectura, Diseño y Ingenería. 
+                    Cursando el grupo de Programación Grafica con el facilitador Mayron Torres del QII del 2022, Presente proyecto es realizado por el grupo del presente curso 
+                    y el proyecto es organizado y desarollado utilizando diferentes tecnologias.</p>
+                <!-- <p>Cursando el grupo de Programación Grafica con el facilitador Mayron Torres del QII del 2022</p> -->
+                <!-- <p>Presente proyecto es realizado por el grupo del presente curso y el proyecto es organizado y desarollado utilizando diferentes tecnologias.</p> -->
             </div>
-
-            </div>
-            </div>
-        </a-layout>
-    
+        </div>
+    </a-layout>
     </div>
-
 
 </template>
 
@@ -43,23 +39,55 @@ export default {
 
 <style scoped>
 
-.text h1 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 550;
-    margin: 0 0 30px 0;
-    padding: 0;
-    color: rgb(95, 63, 63);
-    text-align: center;
-}
-.text p{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 200;
-    font-size: 25px;
-    max-width: 50%;
+.header {
+    padding: 32px;
+    height: 100vh;
     width: 100%;
-    text-align: center;
+    background-color: #EDF2F4;
+}
+.content {
+        display: inline-flex;
+        margin: auto;
+        max-width: 1200px;
+        width: 100%;
+        gap: 50px;
+        padding-top: 64px;
 }
 
+.banner {
+    max-width: 30%;
+    width: 100%;
+    padding-bottom: 300px;
+    padding-left: 33%;
+}
+.content-info {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    padding: 64px;
+    overflow: hidden;
+}
+
+.text-info {
+    z-index: 100px;
+    padding-left: 0%;
+    padding-right: 0%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+}
+.TextSub{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    font-size: 3pc;
+}
+
+.content-info img {
+    position: absolute;
+    z-index: 10;
+    width: 500px;
+}
 
 
 </style>
