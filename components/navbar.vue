@@ -17,7 +17,9 @@
         <a-menu-item key="2">
           <n-link to="/blog">Blog</n-link>
         </a-menu-item>
-        <a-menu-item key="3">Grupo Sanguineo</a-menu-item>
+        <a-menu-item key="3">
+          <n-link to="/typeblood">Grupo Sanguieno</n-link>
+          </a-menu-item>
         <a-menu-item key="4">
           <n-link to="/about">Sobre Nosotros</n-link>
           </a-menu-item>
