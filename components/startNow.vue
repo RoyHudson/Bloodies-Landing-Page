@@ -1,11 +1,12 @@
 <template>
     <a-layout class="start">
-        <img class="start-img" src="../assets/woman_jump.svg" alt="gift" />
-        <p style="color: #AEB5C1">Si quieres obtener mas informacion puedes Suscribirte a nuestro Newsteller</p>
+      <h1 class="TextSub">Newsteller</h1>
+        <img class="start-img" src="../assets/newspaper-news-svgrepo-com.svg" alt="gift" />
+        <p  class="newstellertext">Si quieres obtener mas informacion puedes Suscribirte a nuestro Newsteller</p>
         <div class="form-group">
             <input class="form-field" type="email" placeholder="Email">
         </div>
-        <a-button data-aos="fade-up" type="primary">Enviar</a-button>
+        <a-button class="email" data-aos="fade-up" type="primary">Enviar</a-button>
     </a-layout>
 </template>
 
@@ -128,6 +129,14 @@
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
 }
+.newstellertext{
+    z-index: 100px;
+    padding-left: 30%;
+    padding-right: 30%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+}
 
 * {
   box-sizing: inherit;
@@ -137,13 +146,13 @@
 }
 
 .email{
-  min-height: 100vh;
-  font-family: "Mukta Malar", Arial;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background: #F2EEE3;
+  width: 200px;
+  background: #EE5655;
+  border-color: #EE5655;
+  font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+  
 }
 .form-group {
   max-width: 360px;

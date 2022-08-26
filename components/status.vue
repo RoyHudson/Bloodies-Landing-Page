@@ -1,12 +1,13 @@
 <template>
     <a-layout class="content-info">
         <div class="text-info">
-            <h1>Estado del Proyecto</h1>
-            <a-row :gutter="16">
-                <a-col :span="24" style="margin-top: 32px">
-                    <a-statistic-countdown class=" " title="Dias Faltantes" :value="deadline" format="D H M S" />
-                </a-col>
-            </a-row>
+            <h1 class="TextSub">Proximamente</h1>
+            <div>
+              <img class="status-img" src="../assets/circular-clock-watch-svgrepo-com.svg" alt="gift" />
+              <p style="padding-top: 50px; font-weight:300">
+                Suscribete a nuestro Newsteller para obtener mas informacion acerca del proyecto Bloodies
+              </p>
+            </div>
         </div>
     </a-layout>
 </template>
@@ -19,41 +20,31 @@ export default defineComponent({
     };
 
     return {
-      deadline: Date.now() + 10000 * 60 * 60 * 24 * 2 + 1000 * 30,
+      deadline: Date.now () + 1000 * 60 * 60 * 24 * 2 + 1000 * 30,
       onFinish,
     };
   },
 
 });
 </script>
-<style>
+<style scoped>
 .content-info {
-    position: relative;
-    height: 100vh;
-    width: 100%;
     background-color: white;
-    padding: 0px;
-    overflow: hidden;
-    z-index: 0;
 }
 
 .text-info {
-    margin: auto;
+    text-align: center;
 }
 
-.content-info img {
-    position: absolute;
-    z-index: 10;
-    width: 500px;
+.status-img {
+    height: 350px;
+    padding: auto;
+    position: relative;
+}
+.timer{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  padding-top: 50px;
 }
 
-.img-right {
-    right: -100px;
-    top: -38%;
-}
-
-.img-left {
-    left: -100px;
-    bottom: -38%;
-}
 </style>
