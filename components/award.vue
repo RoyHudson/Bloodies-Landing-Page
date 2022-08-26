@@ -2,7 +2,9 @@
     <a-layout class="award">
         <h1 class="TextSub">¿Quieres Conocer a que tipo de Sangre puedes Donar?</h1>
         <img class="img" src="../assets/blood_types-removebg.png" alt="gift" />
-        <a-button class="hyper"><m-link to="login.vue">Ver mas</m-link></a-button>
+        <a-button class="hyper">
+            <n-link to="/blog">Ver mas</n-link>
+        </a-button>
     </a-layout>
 </template>
 
