@@ -68,7 +68,7 @@ export default {
   article{
     margin: 0;
     border: 0;
-    padding-left: 0;
+    padding: 15px 15px 50px 15px;
     padding-top: 50px;
   }
 
@@ -76,7 +76,7 @@ export default {
     padding: 10px;
   }
 
-  
+
   .share_buttons{
     padding: 5px;
   }

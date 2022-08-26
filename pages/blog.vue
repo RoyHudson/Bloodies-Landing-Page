@@ -49,11 +49,10 @@
         <br>
       </aside>
       <div class="articles">
-        <Article />
-        <Article />
-        <Article />
-        <Article />
-        <Article />
+        <Article class="blog_article_1"/>
+        <Article class="blog_article_2"/>
+        <Article class="blog_article_1"/>
+        <Article class="blog_article_2"/>
         <br>
         <br>
       </div>
@@ -105,13 +104,15 @@ export default defineComponent({
   }
 
   .content::after{
+    padding: 0;
     display: table;
     clear: both;
   }
 
   .sidebar{
+    display: block;
     float: left;
-    width: 30%;
+    width: 20%;
   }
 
   footer{
@@ -121,11 +122,16 @@ export default defineComponent({
 
 
   .articles{
+    display: block;
     margin: 0;
     border-left: 0;
-    padding: 0;
+    padding:0;
     float: right;
-    width: 70%;
+    width: 80%;
+  }
+
+  .blog_article_2{
+    background-color: #f0f2f5;
   }
 
 </style>

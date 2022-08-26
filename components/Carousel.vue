@@ -16,10 +16,10 @@ export default ({
     }
   },
   mounted() {
-    fetch('http://ec2-34-225-194-157.compute-1.amazonaws.com:8080/Assets')
+    fetch('http://ec2-34-225-194-157.compute-1.amazonaws.com:8080/prueba')
       .then((response) => response.json())
       .then((data) => {
-        this.images = data.Carousels
+        this.images = data.Carusel
         console.log(this.images)
       })
   },
@@ -32,7 +32,7 @@ export default ({
   .carousel_images{
     margin: auto;
     width: auto;
-    height: 720px;
+    height: 500px;
   }
 
   .ant-carousel :deep(.slick-dots) {
