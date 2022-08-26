@@ -1,15 +1,13 @@
 <template>
     <a-layout class="header">
         <div class="content">
-            <div class="text">
-                <h1>Contacta con personas dispuesta ayudar</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo rerum veritatis error a optio nesciunt
-                    ullam eligendi molestias eveniet. Perspiciatis quia tenetur cumque, aut impedit quidem perferendis
-                    velit minus eos.</p>
-                <a-button class="hyper"><m-link to="login.vue">Conoce a quienes puedes ayudar →</m-link></a-button>
+            <div class="textdonator">
+                <h1 class="titledonator">Conecta con personas dispuestas ayudar</h1>
+                <p>Mediante nuestro ChatBot podras solicitar una donacion de sangre, luego nuestras entidades afilidas se pondran en contacto con usted.</p>
+                <a-button class="awardbuttom"><m-link to="login.vue">Whats App</m-link></a-button>
             </div>
             <div class="banner"  data-aos="fade-up">
-                <img src="../assets/donator_list.svg" alt="banner" />
+                <img src="../assets/blood-transfusion-surgery-svgrepo-com.svg" alt="banner" />
             </div>
         </div>
     </a-layout>
@@ -37,12 +35,26 @@
     width: 100%;
 }
 
-.text {
+.textdonator {
     max-width: 50%;
     width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+}
+.titledonator{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    font-size: 3pc;
 }
 
 .banner img {
     width: 100%;
+}
+.awardbuttom{
+    width: 200px;
+     background-color: #128C7E;
+     border-color: #25D366;
+     color: white;
 }
 </style>

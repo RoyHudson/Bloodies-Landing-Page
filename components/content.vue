@@ -3,20 +3,22 @@
         <img src="../assets/grid.png" alt="grid" class="img-left">
                 <img src="../assets/grid.png" alt="grid" class="img-right">
         <div class="text-info">
-            <h1>Nuestra Mision y Vision</h1>
+            <h1 class="TextSub">Misión</h1>
 
-            <p>Donar sangre es el regalo más valioso que podemos hacerle a alguien. La decisión de donar sangre puede salvar una vida o 
-                incluso varias si la sangre es separada por sus componentes: glóbulos rojos, plaquetas y plasma, ya que pueden utilizarse 
-                individualmente para pacientes con enfermedades específicas.</p>
+            <p>Somos especializado en ofrecer servicios de salud, docencia e investigación para la población 
+                demandante utilizando tecnología avanzada con compromiso social.</p>
+            <h1 class="TextSub">Visión</h1>
 
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus architecto deleniti assumenda ipsam
-                ipsa sed rerum necessitatibus ipsum similique corrupti impedit tempore quisquam voluptatum debitis, quia
-                distinctio iure voluptatem fugiat.</p>
+            <p>Ser capaz de concientizar eficientemente sobre las necesidades de toda persona cuya 
+                vida o salud depende de la transfusión, esto sin retribución alguna, recolectando continuamente 
+                la sangre mediante la donación a través de la aplicación. </p>
         </div>
     </a-layout>
 </template>
 
 <style>
+
+
 .content-info {
     position: relative;
     height: 100vh;
@@ -27,8 +29,17 @@
 }
 
 .text-info {
-    z-index: 100;
-    margin: auto;
+    z-index: 100px;
+    padding-left: 30%;
+    padding-right: 30%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    font-size: 25px;
+}
+.TextSub{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    font-size: 3pc;
 }
 
 .content-info img {
