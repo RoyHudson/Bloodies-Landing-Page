@@ -34,7 +34,7 @@
           </a>
         </div>
         <div class="ant-design">
-          <a href="" target="_blank" >
+          <a href="https://antdv.com/components/overview" target="_blank" >
             UI Library <img :src="require('assets/ant_d_logo.png')" height="25px" alt="Ant Design logo">
           </a>
         </div>

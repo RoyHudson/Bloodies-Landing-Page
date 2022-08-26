@@ -9,7 +9,7 @@
         </n-link>
       </div>
 
-      <a-menu selectedKeys="selectedKeys" theme="light" mode="horizontal" :style="{ lineHeight: '64px' }">
+      <a-menu  v-model:selectedKey="selectedKeys" theme="light" mode="horizontal" :style="{ lineHeight: '64px' }">
 
         <a-menu-item key="home">
           <n-link to="/"> Home</n-link>
