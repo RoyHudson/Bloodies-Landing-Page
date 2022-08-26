@@ -15,6 +15,9 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
+  env:{
+      NUXT_ENV_BASE_URL: process.env.BASE_URL || 'http://localhost:3000'
+  },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
