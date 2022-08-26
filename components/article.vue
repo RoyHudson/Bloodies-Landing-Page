@@ -11,11 +11,11 @@
             <a-button>Categoria</a-button>
           </n-link>
         </div>
-        <div>
-          <img src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png" width="200"/>
+        <div class="article_img">
+          <img :src="require('/assets/article_temp.jpg')" width="400" alt="article_image"/>
         </div>
         <div>
-          <div>
+          <div class="share_buttons">
             <a-tag color="#55acee">
               <template #icon>
                 <twitter-outlined />
@@ -68,8 +68,16 @@ export default {
   article{
     margin: 0;
     border: 0;
-    padding-left: 0;
+    padding: 15px 15px 50px 15px;
     padding-top: 50px;
   }
 
+  .article_img{
+    padding: 10px;
+  }
+
+
+  .share_buttons{
+    padding: 5px;
+  }
 </style>

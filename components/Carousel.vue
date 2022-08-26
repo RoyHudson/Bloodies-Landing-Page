@@ -1,41 +1,46 @@
 <template>
-  <a-carousel autoplay>
-    <div v-for="item in 5" :key="item">
-<!--      <img :src="require(getImgUrl(item - 1))" alt="carousel images">-->
-      <img src="https://www.wonderwall.sg/content/dam/wonderwall/images/2020/06/8-facts-about-blood-donation-that-make-world-blood-donor-day-a-success/Blood%20Donation_lead.jpg" alt="carousel images">
+  <a-carousel autoplay class="carousel">
+    <div v-for="item in images" :key="item">
+      <!--      <img :src="require(getImgUrl(item - 1))" alt="carousel_images">-->
+      <img class="carousel_images" :src="'http://ec2-34-225-194-157.compute-1.amazonaws.com:8080'+item.url" alt="carousel_images">
     </div>
   </a-carousel>
 
 </template>
 
 <script>
-  import { defineComponent } from 'vue';
-  const baseUrl = "./assets/carousel_img/";
-  export default defineComponent({
-    setup() {
-      const getImgUrl = i => {
-        return `${baseUrl}image${i + 1}.jpg`;
-      };
-
-      return {
-        getImgUrl,
-      };
-    },
-
-  });
-</script>
+export default ({
+  data(){
+    return {
+      images : []
+    }
+  },
+  mounted() {
+    fetch('http://ec2-34-225-194-157.compute-1.amazonaws.com:8080/prueba')
+      .then((response) => response.json())
+      .then((data) => {
+        this.images = data.Carusel
+        console.log(this.images)
+      })
+  },
+});
+</script>1
 
 <style scoped>
   /* For demo */
-  .ant-carousel :deep(.slick-slide img) {
-    padding-top: 65px;
-    display: block;
-    width: 100%;
-  }
 
+  .carousel_images{
+    margin: auto;
+    width: auto;
+    height: 500px;
+  }
 
   .ant-carousel :deep(.slick-dots) {
     position: relative;
     height: 0;
+  }
+
+  .carousel{
+    margin-top: 75px;
   }
 </style>
